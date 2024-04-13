@@ -11,7 +11,7 @@ mongoose
   .connect(CONNECTION_STRING)
   .then(() => console.log("Connection established ..."))
   .catch(() => console.log("NO connection established ..."));
-app.use(responseHeaderModifier());
+app.use(responseHeaderModifier);
 app.use(
   cors({
     origin: "https://aeonaxy-frontend-neon.vercel.app",
