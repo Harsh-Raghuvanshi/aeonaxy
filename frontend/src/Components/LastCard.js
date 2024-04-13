@@ -6,7 +6,7 @@ export default function LastCard() {
   useEffect(
     () =>
       async function fetchdata() {
-        const response = await fetch("http://localhost:5000/last", {
+        const response = await fetch("https://aeonaxy-server.vercel.app/last", {
           method: "GET",
           headers: {
             "authorization": `${localStorage.getItem("token")}`,

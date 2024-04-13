@@ -17,7 +17,7 @@ export default function Signup() {
   }
   async function applyPostRequestAtServer(data){
     try{
-      const response= await fetch("http://localhost:5000/signup",{
+      const response= await fetch("https://aeonaxy-server.vercel.app/signup",{
         method:"POST",
         headers:{
           "Content-Type":"application/json",

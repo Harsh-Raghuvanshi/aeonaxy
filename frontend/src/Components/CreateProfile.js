@@ -15,7 +15,7 @@ export default function CreateProfile() {
   };
   async function handlePostRequestAtAdd(formData){
     try{
-      const response=await fetch("http://localhost:5000/add",{
+      const response=await fetch("https://aeonaxy-server.vercel.app/add",{
         method:"PUT",
         headers: {
           "authorization": `${localStorage.getItem('token')}` // Include the token in the 'Authorization' header
