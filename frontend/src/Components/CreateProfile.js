@@ -18,7 +18,8 @@ export default function CreateProfile() {
       const response=await fetch("https://aeonaxy-server.vercel.app/add",{
         method:"PUT",
         headers: {
-          "authorization": `${localStorage.getItem('token')}` // Include the token in the 'Authorization' header
+          "authorization": `${localStorage.getItem('token')}`,
+          'Access-Control-Allow-Origin': '*'
         },
         body:formData,
       })
