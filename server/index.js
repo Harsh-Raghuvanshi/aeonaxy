@@ -14,6 +14,8 @@ mongoose
 app.use(
   cors({
     origin: "https://aeonaxy-frontend-neon.vercel.app",
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"], // Specify allowed methods
+    allowedHeaders: ["Content-Type", "Authorization"], // Specify allowed headers
   })
 );
 app.use(responseHeaderModifier());
