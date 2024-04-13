@@ -10,7 +10,6 @@ export default function LastCard() {
           method: "GET",
           headers: {
             "authorization": `${localStorage.getItem("token")}`,
-            'Access-Control-Allow-Origin': '*',
           },
         });
         const result = await response.json();

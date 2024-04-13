@@ -19,7 +19,6 @@ export default function CreateProfile() {
         method:"PUT",
         headers: {
           "authorization": `${localStorage.getItem('token')}`,
-          'Access-Control-Allow-Origin': '*'
         },
         body:formData,
       })
